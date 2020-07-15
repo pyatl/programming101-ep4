@@ -16,13 +16,25 @@ To install:
 
 Create a new virtual environment.
 
-On mac:
+
+
+On mac, Linux, and windows:
 
 `python3 -m venv .venv`
 
 Activate the virtual environment:
 
+On Mac and Linux:
+
 `source .venv/bin/activate`
+
+On Windows:
+
+Run `cmd.exe`
+
+`C:\> <venv>\Scripts\activate.bat`
+
+Refer to the docs: https://docs.python.org/3/library/venv.html
 
 Install the required dependencies:
 
