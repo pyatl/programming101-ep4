@@ -7,7 +7,7 @@ Create GUI application with PySimpleGUI and previous diary sample program.
 Diary is a GUI program that allows us to create diary entries.
 It also allows us to read whatever entries are available.
 
-<img src="diary.png">
+<img src="ui.png">
 
 
 Requires Python 3.6+
