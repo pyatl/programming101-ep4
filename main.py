@@ -5,19 +5,19 @@ from models import Diary, Entry
 diary = Diary()
 diary.load()
 
-sg.theme('DarkAmber')	# Add a touch of color
+#sg.theme('DarkAmber')	# Add a touch of color
 # All the stuff inside your window.
 layout = [  [sg.Text('Diary entries:')],
             # add entries into multiline input
-            [sg.Multiline(diary.build_entries(), disabled=True, size=(80, 20), key='_ENTRIES_')],
+            [sg.Multiline(diary.build_entries(), disabled=True, size=(125, 20), font=('Default', 14), key='_ENTRIES_')],
             [sg.Text('Type your diary entry:')],
-            [sg.Multiline('', size=(80, 20), key='_NEW_ENTRY_')],
+            [sg.Multiline('', size=(125, 15), font=('Default', 14), key='_NEW_ENTRY_')],
             [sg.OK(), sg.Cancel()] ]
 
 
 
 # Create the Window
-window = sg.Window('My Diary', layout)
+window = sg.Window('My Diary', layout, size=(800,750))
 
 
 # Event Loop to process "events" and get the "values" of the inputs
